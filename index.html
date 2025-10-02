@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
+  <title>Captcha Solver Demo</title>
+  <link rel=\"stylesheet\" href=\"style.css\" />
+</head>
+<body>
+  <header><h1>Captcha Solver</h1></header>
+  <main>
+    <p>Captcha URL: <span id=\"captcha-url\"></span></p>
+    <div id=\"image-container\" aria-label=\"Captcha image\" style=\"display:none;\">
+      <img id=\"captcha-image\" alt=\"Captcha image\" />
+    </div>
+    <div id=\"status\" class=\"status\">Awaiting URL…</div>
+    <div id=\"result\" class=\"result\" aria-live=\"polite\"></div>
+  </main>
+  <script src=\"script.js\" defer></script>
+</body>
+</html>
