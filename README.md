@@ -1,11 +1,27 @@
-# test5
+# test5 Captcha Solver Demo
 
-Captcha Solver (MIT Licensed)
+MIT Licensed
 
-This project implements a simple web page that can display a captcha image and simulate solving it. The page reads a URL parameter ?url=... which points to an image (e.g., image.png). It shows the image and, within 15 seconds, displays the solved captcha text.
+Overview
+This repository hosts a minimal client-side web page that displays a captcha image from a URL and simulates solving it within 15 seconds. The page reads a URL parameter ?url=... which points to an image (for example, image.png). It then renders the image and shows a simulated solved captcha text after a short delay.
 
-Usage
-- Open index.html via a static server or GitHub Pages.
-- Append ?url=https://example.com/image.png to load a captcha image.
+Live Demo
+- Index page: https://<your-username>.github.io/test5/
+- Usage: Open the page and provide a captcha image URL via the query parameter, e.g. ?url=https://example.com/image.png
 
-License: MIT
+How it works
+- index.html loads style.css and script.js.
+- script.js reads the ?url parameter, displays the image, and shows a simulated result within 1-15 seconds.
+- The simulated captcha text is randomly generated to illustrate a successful solve.
+
+Files
+- index.html: Entry point for the static site.
+- style.css: Page styling.
+- script.js: Client-side logic to display image and simulate solving.
+- README.md: This document.
+
+Deployment
+- This project is ready to be published via GitHub Pages. Ensure GitHub Pages is enabled for the repository and serving from the main branch (or gh-pages as configured).
+
+License
+This project is MIT licensed. See LICENSE or the header in each file for details.
