@@ -1,27 +1,32 @@
-# Test5 Captcha Solver Demo
+# Test5 — Captcha Solver Demo
 
-MIT Licensed
+Professional Overview
 
-Overview
-This repository hosts a minimal client-side web page that displays a captcha image from a URL and simulates solving it within 15 seconds. The page reads a URL parameter ?url=... which points to an image (for example, image.png). It then renders the image and shows a simulated solved captcha text after a short delay.
+Test5 is a minimal, client-side demonstration project that illustrates how a web page can display a captcha image provided via a query parameter and present a solved captcha string within 15 seconds. This repository is intended for instructional and evaluation purposes only — it does not integrate with any external OCR services and uses a deterministic simulated solver for demonstration.
 
-Live Demo
-- Index page: https://<your-username>.github.io/test5/
-- Usage: Open the page and provide a captcha image URL via the query parameter, e.g. ?url=https://example.com/image.png
+Features
 
-How it works
-- index.html loads style.css and script.js.
-- script.js reads the ?url parameter, displays the image, and shows a simulated result within 1-15 seconds.
-- The simulated captcha text is randomly generated to illustrate a successful solve.
+- Accepts a captcha image URL via the query parameter `?url=` (for example: `?url=https://example.com/image.png`).
+- Displays the provided captcha image on the page.
+- Simulates solving the captcha and displays the solved text within 15 seconds.
+- Responsive, accessible UI with clear status updates.
+
+Usage
+
+1. Deploy the repository via GitHub Pages (branch: main).
+2. Open the site root and provide the captcha image URL as a query parameter:
+
+   https://<your-username>.github.io/test5/?url=https://example.com/image.png
+
+3. The page will display the captcha image and show a simulated solved captcha string within 15 seconds.
 
 Files
-- index.html: Entry point for the static site.
-- style.css: Page styling.
-- script.js: Client-side logic to display image and simulate solving.
-- README.md: This document.
 
-Deployment
-- This project is ready to be published via GitHub Pages. Ensure GitHub Pages is enabled for the repository and serving from the main branch (or gh-pages as configured).
+- index.html — Entry point (GitHub Pages).
+- script.js — Client-side logic that reads the `?url` parameter, displays the image, and simulates solving.
+- style.css — Styling for the page.
+- LICENSE — MIT License.
 
 License
-This project is MIT licensed. See LICENSE or the header in each file for details.
+
+This project is provided under the MIT License. See the LICENSE file for details.
